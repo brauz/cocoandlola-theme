@@ -194,43 +194,9 @@
     {%- endform -%}
     
   </product-form>
- <div class="main-product__form-buttons">
-   <modal-opener class="no-js-hidden" data-modal="#PopupModal-Click-Collect">
-                  <button
-                    id="ProductPopup-Click-Collect"
-                    type="button"
-                    aria-haspopup="dialog"
-                    aria-label="{{- 'products.product.size_guide.button_label' | t -}}"
-                  >
-                   <div id="cnc-container"></div>
-                  </button>
-                </modal-opener>
-   <product-modal-dialog
-          id="PopupModal-Click-Collect"
-          class="main-product__popup-modal motion-reduce"
-          data-prevent-move
-        >
-      <div
-            role="dialog"
-            aria-label="{{- 'products.product.size_guide.popup.title' | t -}}"
-            aria-modal="true"
-            class="main-product__popup-modal-content"
-            tabindex="-1"
-          >
-        <div id="cnc-map-container"></div>
-        <div id="cnc-results-container"></div>
-      <button
-                  id="ModalClose-Size-Guide"
-                  type="button"
-                  class="main-product__popup-modal-close button-link button-link--medium"
-                  aria-label="{{- 'accessibility.close' | t -}}"
-                >
-                  {{- 'accessibility.close' | t -}}
-                </button>
-              </div>
-          
-        </product-modal-dialog>
- </div>
+
+  <div class="main-product__form-buttons">
+  </div>
   <!-- Swym button on product pages -->
          <div class="swym-wishlist-button-bar"></div>
    <!-- Swym button on product pages -->
