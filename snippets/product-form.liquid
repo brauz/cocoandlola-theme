@@ -196,6 +196,15 @@
   </product-form>
 
   <div class="main-product__form-buttons">
+    <div
+      id="brauz-find-in-store-config-product-page"
+      data-sd="{{ shop.permanent_domain }}"
+      data-cvi="{{ product.first_available_variant.id }}"
+      data-hodv="{{ product.has_only_default_variant }}"
+      style="display: none; width: 0"
+    ></div>
+    <div id="brauz-find-in-store-product-page" style="margin-top: -10px;"></div>
+    <script src="https://d3aq2u4yw77ivo.cloudfront.net/find-in-store/shopify/cocoandlola/find-in-store.shopify.cocoandlola.prod.js" async></script>
   </div>
   <!-- Swym button on product pages -->
          <div class="swym-wishlist-button-bar"></div>
