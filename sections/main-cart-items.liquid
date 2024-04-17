@@ -140,8 +140,12 @@
                         {{- 'cart.general.terms_message' | t -}}
                       </p>
                   {%- endif -%}
+                  <div id="cnc-container">
+                    <input id="cnc-mode-input" type="hidden" name="attributes[cnc-fulfilment-method]" value="home">
+                    <input type="hidden" class="cnc-contact" id="cnc-store-name" name="attributes[cnc-store-name]" value="">
+                    <input type="hidden" class="cnc-contact" id="cnc-outlet" name="attributes[cnc-outlet]" value="">
+                  </div>
                   {% comment %}
-                  <div id="cnc-container"></div>
                   <div id="cnc-map-container"></div>
                   <div id="cnc-results-container"></div>
                   {% endcomment %}
