@@ -29,6 +29,11 @@
       <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
       <input type="hidden" name="selling_plan" value="{{- current_selling_plan_allocation.selling_plan.id | default: '' -}}">
 
+      <!-- To integrate with Retail Express, by default, set the attribute cnc-fulfilment-method = home for the cart -->
+      <input type="hidden" name="attributes[cnc-fulfilment-method]" value="home">
+      <input type="hidden" class="cnc-contact" id="cnc-store-name" name="attributes[cnc-store-name]" value="">
+      <input type="hidden" class="cnc-contact" id="cnc-outlet" name="attributes[cnc-outlet]" value="">
+
       {%- unless block -%}
         <input type="hidden" name="return_to" value="/checkout" disabled>
       {%- endunless -%}
